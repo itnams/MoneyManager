@@ -11,8 +11,9 @@ import SwiftUI
 struct Home: View{
     @State var animatedStates: [Bool] = Array(repeating: false, count: 3)
     @Namespace var animation
+    @State var currentDate = Date()
     var body: some View{
-        ZStack{
+        ZStack(alignment: .top){
             if !animatedStates[1]{
                 RoundedRectangle(cornerRadius: animatedStates[0] ? 30 : 0, style: .continuous)
                     .fill(Color.gray.opacity(0.4))
@@ -21,10 +22,13 @@ struct Home: View{
             }
             if animatedStates[0]{
                 VStack(spacing: 0){
-                    RoundedRectangle(cornerRadius: 30, style: .continuous)
-                        .fill(Color.gray.opacity(0.4))
-                        .matchedGeometryEffect(id: "DATEVIEW", in: animation)
-                        .frame(height: 290)
+                    CustomDatePicker(curentDate: $currentDate)
+                        .frame(height: 400)
+                        .background(
+                            RoundedRectangle(cornerRadius: 30, style: .continuous)
+                                .fill(Color.gray.opacity(0.4))
+                                .matchedGeometryEffect(id: "DATEVIEW", in: animation)
+                        )
                 }
                 .padding([.horizontal,.top])
             }

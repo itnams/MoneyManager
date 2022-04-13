@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		161927DB28069EA600F476A5 /* CustomDatePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 161927DA28069EA600F476A5 /* CustomDatePicker.swift */; };
+		161927DD2806A24300F476A5 /* DateValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 161927DC2806A24300F476A5 /* DateValue.swift */; };
 		1687AC5D28056A43009F661B /* MoneyManagerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1687AC5C28056A43009F661B /* MoneyManagerApp.swift */; };
 		1687AC5F28056A43009F661B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1687AC5E28056A43009F661B /* ContentView.swift */; };
 		1687AC6128056A45009F661B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1687AC6028056A45009F661B /* Assets.xcassets */; };
@@ -35,6 +37,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		161927DA28069EA600F476A5 /* CustomDatePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomDatePicker.swift; sourceTree = "<group>"; };
+		161927DC2806A24300F476A5 /* DateValue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateValue.swift; sourceTree = "<group>"; };
 		1687AC5928056A43009F661B /* MoneyManager.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MoneyManager.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1687AC5C28056A43009F661B /* MoneyManagerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoneyManagerApp.swift; sourceTree = "<group>"; };
 		1687AC5E28056A43009F661B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -135,6 +139,7 @@
 			isa = PBXGroup;
 			children = (
 				168DECE828056BE8003EB831 /* Home.swift */,
+				161927DA28069EA600F476A5 /* CustomDatePicker.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -142,6 +147,7 @@
 		168DECE728056BBD003EB831 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				161927DC2806A24300F476A5 /* DateValue.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -276,9 +282,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				161927DB28069EA600F476A5 /* CustomDatePicker.swift in Sources */,
 				1687AC5F28056A43009F661B /* ContentView.swift in Sources */,
 				168DECE928056BE8003EB831 /* Home.swift in Sources */,
 				1687AC5D28056A43009F661B /* MoneyManagerApp.swift in Sources */,
+				161927DD2806A24300F476A5 /* DateValue.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
