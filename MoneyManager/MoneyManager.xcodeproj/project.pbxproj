@@ -17,6 +17,11 @@
 		1687AC7828056A45009F661B /* MoneyManagerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1687AC7728056A45009F661B /* MoneyManagerUITests.swift */; };
 		1687AC7A28056A45009F661B /* MoneyManagerUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1687AC7928056A45009F661B /* MoneyManagerUITestsLaunchTests.swift */; };
 		168DECE928056BE8003EB831 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 168DECE828056BE8003EB831 /* Home.swift */; };
+		16F8ABC7280EA0FE002E89D2 /* MoreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16F8ABC6280EA0FE002E89D2 /* MoreView.swift */; };
+		16F8ABC9280EA12D002E89D2 /* StatisticsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16F8ABC8280EA12D002E89D2 /* StatisticsView.swift */; };
+		16F8ABCB280EA145002E89D2 /* InputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16F8ABCA280EA145002E89D2 /* InputView.swift */; };
+		16F8ABCD280EA159002E89D2 /* CalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16F8ABCC280EA159002E89D2 /* CalendarView.swift */; };
+		16F8ABD2280EA3DB002E89D2 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16F8ABD1280EA3DB002E89D2 /* Theme.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +55,11 @@
 		1687AC7728056A45009F661B /* MoneyManagerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoneyManagerUITests.swift; sourceTree = "<group>"; };
 		1687AC7928056A45009F661B /* MoneyManagerUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoneyManagerUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		168DECE828056BE8003EB831 /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
+		16F8ABC6280EA0FE002E89D2 /* MoreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreView.swift; sourceTree = "<group>"; };
+		16F8ABC8280EA12D002E89D2 /* StatisticsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatisticsView.swift; sourceTree = "<group>"; };
+		16F8ABCA280EA145002E89D2 /* InputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputView.swift; sourceTree = "<group>"; };
+		16F8ABCC280EA159002E89D2 /* CalendarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarView.swift; sourceTree = "<group>"; };
+		16F8ABD1280EA3DB002E89D2 /* Theme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -138,6 +148,11 @@
 		168DECE628056BAF003EB831 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				16F8ABCE280EA1A4002E89D2 /* Theme */,
+				16F8ABC5280EA0EF002E89D2 /* More */,
+				16F8ABC4280EA0E4002E89D2 /* Statistics */,
+				16F8ABC3280EA0DC002E89D2 /* Input */,
+				16F8ABC2280EA0CC002E89D2 /* Calendar */,
 				168DECE828056BE8003EB831 /* Home.swift */,
 				161927DA28069EA600F476A5 /* CustomDatePicker.swift */,
 			);
@@ -150,6 +165,46 @@
 				161927DC2806A24300F476A5 /* DateValue.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		16F8ABC2280EA0CC002E89D2 /* Calendar */ = {
+			isa = PBXGroup;
+			children = (
+				16F8ABCC280EA159002E89D2 /* CalendarView.swift */,
+			);
+			path = Calendar;
+			sourceTree = "<group>";
+		};
+		16F8ABC3280EA0DC002E89D2 /* Input */ = {
+			isa = PBXGroup;
+			children = (
+				16F8ABCA280EA145002E89D2 /* InputView.swift */,
+			);
+			path = Input;
+			sourceTree = "<group>";
+		};
+		16F8ABC4280EA0E4002E89D2 /* Statistics */ = {
+			isa = PBXGroup;
+			children = (
+				16F8ABC8280EA12D002E89D2 /* StatisticsView.swift */,
+			);
+			path = Statistics;
+			sourceTree = "<group>";
+		};
+		16F8ABC5280EA0EF002E89D2 /* More */ = {
+			isa = PBXGroup;
+			children = (
+				16F8ABC6280EA0FE002E89D2 /* MoreView.swift */,
+			);
+			path = More;
+			sourceTree = "<group>";
+		};
+		16F8ABCE280EA1A4002E89D2 /* Theme */ = {
+			isa = PBXGroup;
+			children = (
+				16F8ABD1280EA3DB002E89D2 /* Theme.swift */,
+			);
+			path = Theme;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -283,8 +338,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				161927DB28069EA600F476A5 /* CustomDatePicker.swift in Sources */,
+				16F8ABC7280EA0FE002E89D2 /* MoreView.swift in Sources */,
 				1687AC5F28056A43009F661B /* ContentView.swift in Sources */,
+				16F8ABD2280EA3DB002E89D2 /* Theme.swift in Sources */,
+				16F8ABC9280EA12D002E89D2 /* StatisticsView.swift in Sources */,
 				168DECE928056BE8003EB831 /* Home.swift in Sources */,
+				16F8ABCD280EA159002E89D2 /* CalendarView.swift in Sources */,
+				16F8ABCB280EA145002E89D2 /* InputView.swift in Sources */,
 				1687AC5D28056A43009F661B /* MoneyManagerApp.swift in Sources */,
 				161927DD2806A24300F476A5 /* DateValue.swift in Sources */,
 			);
@@ -445,6 +505,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"MoneyManager/Preview Content\"";
+				DEVELOPMENT_TEAM = FUM2R2D6FT;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -473,6 +534,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"MoneyManager/Preview Content\"";
+				DEVELOPMENT_TEAM = FUM2R2D6FT;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;

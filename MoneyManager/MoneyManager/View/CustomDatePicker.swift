@@ -13,21 +13,30 @@ struct CustomDatePicker: View {
     @State var animatedStates: [Bool] = Array(repeating: false, count: 2)
     var body: some View {
         VStack(spacing: 30){
-            HStack(spacing: 20){
+            HStack(alignment: .center,spacing: 20){
                 Button {
-                    currentMonth -= 1
+                    curentDate = Date()
+                    currentMonth = 0
                 } label: {
-                    Image(systemName: "chevron.left")
-                        .font(.title2)
+                    Text("To day")
                 }
-                Text(extracDate()[0] + " " + extracDate()[1])
-                    .font(.callout)
-                    .fontWeight(.semibold)
-                Button {
-                    currentMonth += 1
-                } label: {
-                    Image(systemName: "chevron.right")
-                        .font(.title2)
+                Spacer()
+                HStack{
+                    Button {
+                        currentMonth -= 1
+                    } label: {
+                        Image(systemName: "chevron.left")
+                            .font(.title2)
+                    }
+                    Text(extracDate()[0] + " " + extracDate()[1])
+                        .font(.callout)
+                        .fontWeight(.semibold)
+                    Button {
+                        currentMonth += 1
+                    } label: {
+                        Image(systemName: "chevron.right")
+                            .font(.title2)
+                    }
                 }
             }
             .padding(.horizontal)
