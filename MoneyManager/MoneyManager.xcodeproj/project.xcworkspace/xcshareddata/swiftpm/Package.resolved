@@ -1,0 +1,14 @@
+{
+  "pins" : [
+    {
+      "identity" : "calendarpicker",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/itnams/CalendarPicker.git",
+      "state" : {
+        "revision" : "e415618a436655a7c4c58b2df3f3757ffa75ffe6",
+        "version" : "1.0.1"
+      }
+    }
+  ],
+  "version" : 2
+}

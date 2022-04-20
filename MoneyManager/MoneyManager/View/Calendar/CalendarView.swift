@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import CalendarPicker
 
 struct CalendarView: View{
     @State var currentDate = Date()
@@ -14,7 +15,7 @@ struct CalendarView: View{
     let style = ThemeStyle.stype
     var body: some View{
         VStack(spacing: 0){
-            CustomDatePicker(curentDate: $currentDate)
+            CalendarPicker(curentDate: $currentDate)
                 .frame(height: size.heightCalendar)
                 .background(
                     RoundedRectangle(cornerRadius: style.cornerRadius, style: .continuous)

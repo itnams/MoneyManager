@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		161927DB28069EA600F476A5 /* CustomDatePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 161927DA28069EA600F476A5 /* CustomDatePicker.swift */; };
 		161927DD2806A24300F476A5 /* DateValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 161927DC2806A24300F476A5 /* DateValue.swift */; };
+		1667C8D9280FA6B900CA2EE1 /* CalendarPicker in Frameworks */ = {isa = PBXBuildFile; productRef = 1667C8D8280FA6B900CA2EE1 /* CalendarPicker */; };
 		1687AC5D28056A43009F661B /* MoneyManagerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1687AC5C28056A43009F661B /* MoneyManagerApp.swift */; };
 		1687AC5F28056A43009F661B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1687AC5E28056A43009F661B /* ContentView.swift */; };
 		1687AC6128056A45009F661B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1687AC6028056A45009F661B /* Assets.xcassets */; };
@@ -42,7 +42,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		161927DA28069EA600F476A5 /* CustomDatePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomDatePicker.swift; sourceTree = "<group>"; };
 		161927DC2806A24300F476A5 /* DateValue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateValue.swift; sourceTree = "<group>"; };
 		1687AC5928056A43009F661B /* MoneyManager.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MoneyManager.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1687AC5C28056A43009F661B /* MoneyManagerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoneyManagerApp.swift; sourceTree = "<group>"; };
@@ -67,6 +66,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1667C8D9280FA6B900CA2EE1 /* CalendarPicker in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -154,7 +154,6 @@
 				16F8ABC3280EA0DC002E89D2 /* Input */,
 				16F8ABC2280EA0CC002E89D2 /* Calendar */,
 				168DECE828056BE8003EB831 /* Home.swift */,
-				161927DA28069EA600F476A5 /* CustomDatePicker.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -223,6 +222,9 @@
 			dependencies = (
 			);
 			name = MoneyManager;
+			packageProductDependencies = (
+				1667C8D8280FA6B900CA2EE1 /* CalendarPicker */,
+			);
 			productName = MoneyManager;
 			productReference = 1687AC5928056A43009F661B /* MoneyManager.app */;
 			productType = "com.apple.product-type.application";
@@ -295,6 +297,9 @@
 				Base,
 			);
 			mainGroup = 1687AC5028056A43009F661B;
+			packageReferences = (
+				1667C8D7280FA6B900CA2EE1 /* XCRemoteSwiftPackageReference "CalendarPicker" */,
+			);
 			productRefGroup = 1687AC5A28056A43009F661B /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -337,7 +342,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				161927DB28069EA600F476A5 /* CustomDatePicker.swift in Sources */,
 				16F8ABC7280EA0FE002E89D2 /* MoreView.swift in Sources */,
 				1687AC5F28056A43009F661B /* ContentView.swift in Sources */,
 				16F8ABD2280EA3DB002E89D2 /* Theme.swift in Sources */,
@@ -667,6 +671,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		1667C8D7280FA6B900CA2EE1 /* XCRemoteSwiftPackageReference "CalendarPicker" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/itnams/CalendarPicker.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		1667C8D8280FA6B900CA2EE1 /* CalendarPicker */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1667C8D7280FA6B900CA2EE1 /* XCRemoteSwiftPackageReference "CalendarPicker" */;
+			productName = CalendarPicker;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 1687AC5128056A43009F661B /* Project object */;
 }
